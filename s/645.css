@@ -1,1 +1,27 @@
+body{
+  margin: 0;
+  padding: 0;
+  min-width: 640px;
+  min-height: 360px;
 
+}
+
+.logo {
+	height: 100px;
+	width: auto;
+	overflow: hidden;
+	float: right;
+
+}
+
+.words h1{
+	text-align: left;
+	font-family: 'Oxygen', sans-serif;
+
+}
+
+.words p{
+	text-align: left;
+	font-family: 'Oxygen', sans-serif;
+	
+}

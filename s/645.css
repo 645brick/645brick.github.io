@@ -1,27 +1,87 @@
+html {
+    background: url(../i/cir.png) no-repeat center center fixed;
+    background-size: cover;
+} 
 body{
-  margin: 0;
-  padding: 0;
-  min-width: 640px;
-  min-height: 360px;
-
+	margin: 0%;
+	padding: 0%;
+	border: 0%;
+	min-width: 720px;
+	min-height: 1280px;
 }
-
 .logo {
-	height: 100px;
-	width: auto;
+	padding-left: 1%;
+	padding-top: .5%;
+	min-width: 200px;
+	height: auto;
+	width: 15%;
 	overflow: hidden;
+	float: left;
+	z-index: 1000;
+	position: relative;
+}
+
+.words {
+	font-family: 'Oxygen', sans-serif;
+	position: relative;
+	z-index: 2;
 	float: right;
-
+	padding-right: 2%;
 }
 
-.words h1{
-	text-align: left;
-	font-family: 'Oxygen', sans-serif;
+h2 {
 
+	font-family: 'Oxygen', sans-serif;
+	position: relative;
+	z-index: 3;
 }
 
-.words p{
-	text-align: left;
+
+h3 {
 	font-family: 'Oxygen', sans-serif;
+	position: relative;
+	z-index: 3;
+}
+
+p {
+	margin-top: 30%;
+	margin-left: 1%;
 	
+}
+
+
+
+
+
+
+/*  SECTIONS  */
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+
+/*  GRID OF THREE  */
+.span_3_of_3 { width: 100%; }
+.span_2_of_3 { width: 66.13%; }
+.span_1_of_3 { width: 32.26%; }
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 480px) {
+	.col {  margin: 1% 0 1% 0%; }
+	.span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
 }
